@@ -63,9 +63,9 @@ class CocoEvaluator(object):
 
     def summarize(self):
         for iou_type, coco_eval in self.coco_eval.items():
-            evaluation += "IoU metric: {}".format(iou_type)
-            evaluation += "\n"
+            evaluation = "IoU metric: {}".format(iou_type)
             print("IoU metric: {}".format(iou_type))
+            print("End of summarize")
             coco_eval.summarize()
         return evaluation
 
