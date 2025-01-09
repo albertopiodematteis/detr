@@ -68,7 +68,7 @@ class CocoEvaluator(object):
             evaluation += "\n"
             print("IoU metric: {}".format(iou_type))
             coco_eval.summarize()
-        return evaluation
+        return "Ciao"
 
     def prepare(self, predictions, iou_type):
         if iou_type == "bbox":
